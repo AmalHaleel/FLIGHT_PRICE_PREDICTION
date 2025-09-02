@@ -18,20 +18,31 @@ Approach
 Data Preprocessing
 
 Handled missing values (Route, Total_Stops).
+
 Standardized text (e.g., "No Info" → "No info").
+
 Extracted Day, Month, Year, Dep_Hour, Arrival_Hour, Duration_mins.
+
 Derived features: is_weekend, is_overnight.
+
 Feature Engineering & Encoding
+
 Converted categorical features with OneHotEncoding.
+
 Scaled numerical features where needed.
+
 Used ColumnTransformer and Pipeline for clean preprocessing.
 
 Modeling
 
 Trained multiple regression models:
+
 Linear Regression
+
 Random Forest Regressor
+
 XGBoost Regressor
+
 Ridge Regression
 
 Evaluation Metrics:
