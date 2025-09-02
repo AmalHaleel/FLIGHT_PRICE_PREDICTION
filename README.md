@@ -1,19 +1,19 @@
 # FLIGHT_PRICE_PREDICTION
 
-Overview
+  Overview
 
 This project predicts flight ticket prices using Machine Learning regression models.
 It includes data preprocessing, feature engineering, model training, and evaluation with multiple algorithms.
 The final model, Random Forest Regressor, achieved an R² score of 0.9477, explaining ~95% of the price variance.
 
-Dataset
+  Dataset
 
 Rows: 10,683
 Target: Price (flight fare)
 Features: Airline, Source, Destination, Route, Total_Stops, Duration, Date_of_Journey, Additional_Info, etc.
 Preprocessed to handle missing values, inconsistent formats, and feature extraction from dates/times.
 
-Approach
+  Approach
 
 Data Preprocessing
 
@@ -33,7 +33,8 @@ Scaled numerical features where needed.
 
 Used ColumnTransformer and Pipeline for clean preprocessing.
 
-Modeling
+
+  Modeling
 
 Trained multiple regression models:
 
@@ -45,15 +46,15 @@ XGBoost Regressor
 
 Ridge Regression
 
-Evaluation Metrics:
+  Evaluation Metrics:
 
 R² score, Cross-Validation
 
-Visualizations:
+ Visualizations:
 
 Predicted vs Actual prices, Error distribution, Feature importance.
 
- Results
+  Results
  
 Model	R² Score	CV Mean Score
 Linear Regression	0.7017	–
